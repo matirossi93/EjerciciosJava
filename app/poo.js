@@ -218,3 +218,73 @@ productos.forEach(producto => {
   // Ejecutar el menú
   mostrarMenu();
   */
+
+//   EJERCICIO NUMERO 10
+
+/* class Aeropuerto {
+    
+    constructor (nombreAeropuerto) {
+
+        this.nombreAeropuerto = nombreAeropuerto;
+        this.listaAviones = [];
+    }
+
+    agregarAvion(avion) {
+        this.listaAviones.push(avion);
+        console.log(`El avion ${avion} se agregado al aeropuerto ${this.nombre}`)
+
+
+    }
+
+    buscarAvion(nombreAvion) {
+
+       const avionEncontrado = this.listaAviones.find(avion => avion.nombre === nombreAvion);
+
+       if(avionEncontrado){
+        console.log(`Avion encontrado ${avionEncontrado.nombre}, destino ${avionEncontrado.destino}`);
+
+       } else {
+        console.log(`No se encontro ningun avion con el nombre ${avionEncontrado}`);
+       }
+
+    }
+
+    
+}
+
+class Aviones {
+
+    constructor(nombre, capacidad, destino) {
+
+        this.nombre = nombre;
+        this.capacidad = capacidad;
+        this.destino = destino;
+        this.listaPasajeros = [];
+    }
+
+    abordar(pasajero) {
+
+        if(this.capacidad > this.listaPasajeros.length){
+
+            this.listaPasajeros.push(pasajero);
+            console.log(`El pasajero ${pasajero} ha abordado el avion ${this.nombre}`)
+
+        } else {
+            console.log(`El avion ${this.nombre} esta lleno`);
+        }
+    }
+}
+
+
+const aeropuertoInternacional = new Aeropuerto ("Aeropuerto Internacional");
+
+const avion1 = new Aviones ("Latam", 160, "Estambul");
+const avion2 = new Aviones ("Gol", 140, "Buenos Aires");
+const avion3 = new Aviones ("Aerolineas", 180, "Medellin");
+
+
+aeropuertoInternacional.agregarAvion(avion1);
+aeropuertoInternacional.agregarAvion(avion2);
+aeropuertoInternacional.agregarAvion(avion3);
+
+aeropuertoInternacional.buscarAvion("Gol"); */
